@@ -17,6 +17,15 @@ application/toml=org.gnome.TextEditor.desktop
 application/xml=org.gnome.TextEditor.desktop
 text/css=org.gnome.TextEditor.desktop
 
+# images
+image/png=dev.noctalia.Noctalia.Annotator.desktop
+image/jpeg=dev.noctalia.Noctalia.Annotator.desktop
+image/webp=dev.noctalia.Noctalia.Annotator.desktop
+image/jxl=dev.noctalia.Noctalia.Annotator.desktop
+image/bmp=dev.noctalia.Noctalia.Annotator.desktop
+image/svg+xml=dev.noctalia.Noctalia.Annotator.desktop
+image/vnd.microsoft.icon=dev.noctalia.Noctalia.Annotator.desktop
+
 # firefox
 x-scheme-handler/http=org.mozilla.firefox.desktop
 x-scheme-handler/https=org.mozilla.firefox.desktop
@@ -25,15 +34,6 @@ application/xhtml+xml=org.mozilla.firefox.desktop
 application/pdf=org.mozilla.firefox.desktop
 image/avif=org.mozilla.firefox.desktop
 image/gif=org.mozilla.firefox.desktop
-image/jpeg=org.mozilla.firefox.desktop
-image/jxl=org.mozilla.firefox.desktop
-image/png=org.mozilla.firefox.desktop
-image/svg+xml=org.mozilla.firefox.desktop
-image/bmp=org.mozilla.firefox.desktop
-image/x-icon=org.mozilla.firefox.desktop
-image/x-ico=org.mozilla.firefox.desktop
-image/webp=org.mozilla.firefox.desktop
-image/x-webp=org.mozilla.firefox.desktop
 audio/aac=org.mozilla.firefox.desktop
 audio/mp4=org.mozilla.firefox.desktop
 audio/mpeg=org.mozilla.firefox.desktop

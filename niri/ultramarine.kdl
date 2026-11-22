@@ -1,0 +1,70 @@
+prefer-no-csd
+
+// struts trim gaps at top/bottom to 4px
+layout {
+    gaps 8
+    struts {
+        top -4
+        bottom -4
+    }
+    focus-ring {
+        off
+    }
+    border {
+        on
+        width 2
+    }
+}
+
+window-rule {
+    geometry-corner-radius 12
+    clip-to-geometry true
+}
+
+// file pickers without a parent window
+window-rule {
+    match app-id=r#"^xdg-desktop-portal-(gnome|gtk)$"#
+    open-floating true
+}
+
+// hide password managers from screenshots and screen sharing
+window-rule {
+    match app-id=r#"^org\.keepassxc\.KeePassXC$"#
+    match app-id=r#"^org\.gnome\.World\.Secrets$"#
+    match app-id=r#"^(com\.onepassword\.OnePassword|1Password)$"#
+    match app-id=r#"^(com\.bitwarden\.desktop|Bitwarden)$"#
+    block-out-from "screen-capture"
+}
+
+// steam's notification popups go bottom-right instead of the middle of the screen
+window-rule {
+    match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
+    default-floating-position x=10 y=10 relative-to="bottom-right"
+}
+
+window-rule {
+    match app-id=r#"^(org\.gnome\.Calculator|gnome-calculator)$"#
+    open-floating true
+}
+
+// noctalia's blurred wallpaper behind the overview
+layer-rule {
+    match namespace="^noctalia-backdrop"
+    place-within-backdrop true
+}
+
+// lets noctalia notifications focus windows
+debug {
+    honor-xdg-activation-with-invalid-serial
+}
+
+hotkey-overlay {
+    skip-at-startup
+}
+
+// noctalia handles screenshots
+screenshot-path null
+
+environment {
+    ELECTRON_OZONE_PLATFORM_HINT "auto"
+}

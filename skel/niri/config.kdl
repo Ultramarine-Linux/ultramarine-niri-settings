@@ -2,3 +2,5 @@ include "/etc/niri/config.kdl"
 include optional=true "noctalia.kdl"
 
 // your settings go below
+// the default configs live in /etc/niri/
+// whatever you put below overwrites them

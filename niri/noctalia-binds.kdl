@@ -1,0 +1,40 @@
+binds {
+    // #"Applications"
+    Mod+T repeat=false hotkey-overlay-title="Open a Terminal: Alacritty" { spawn "alacritty"; }
+    Mod+B repeat=false hotkey-overlay-title="Open the Browser: Firefox" { spawn "firefox"; }
+    Mod+E repeat=false hotkey-overlay-title="Open Files: Nautilus" { spawn "nautilus" "--new-window"; }
+
+    // #"Noctalia"
+    Mod+D repeat=false hotkey-overlay-title="Run an Application" { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
+    Mod+Space repeat=false hotkey-overlay-title="Run an Application" { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
+    Mod+S repeat=false hotkey-overlay-title="Control Center" { spawn "noctalia" "msg" "panel-toggle" "control-center"; }
+    Mod+Shift+Comma repeat=false hotkey-overlay-title="Noctalia Settings" { spawn "noctalia" "msg" "settings-toggle"; }
+    Alt+Tab hotkey-overlay-title="Switch Windows" { spawn "noctalia" "msg" "window-switcher" "hold"; }
+    Mod+Slash repeat=false hotkey-overlay-title="Show Important Hotkeys" { show-hotkey-overlay; }
+
+    // #"System"
+    Super+Alt+L repeat=false hotkey-overlay-title="Lock the Screen" { spawn "noctalia" "msg" "session" "lock"; }
+    Mod+Shift+E repeat=false hotkey-overlay-title="Session Menu" { spawn "noctalia" "msg" "panel-toggle" "session"; }
+
+    // #"Audio"
+    XF86AudioRaiseVolume allow-when-locked=true hotkey-overlay-title="Volume Up" { spawn "noctalia" "msg" "volume-up"; }
+    XF86AudioLowerVolume allow-when-locked=true hotkey-overlay-title="Volume Down" { spawn "noctalia" "msg" "volume-down"; }
+    XF86AudioMute        allow-when-locked=true hotkey-overlay-title="Mute Audio" { spawn "noctalia" "msg" "volume-mute"; }
+    XF86AudioMicMute     allow-when-locked=true hotkey-overlay-title="Mute Microphone" { spawn "noctalia" "msg" "mic-mute"; }
+
+    // #"Media"
+    XF86AudioPlay allow-when-locked=true hotkey-overlay-title="Play or Pause" { spawn "noctalia" "msg" "media" "toggle"; }
+    XF86AudioStop allow-when-locked=true hotkey-overlay-title="Stop" { spawn "noctalia" "msg" "media" "stop"; }
+    XF86AudioPrev allow-when-locked=true hotkey-overlay-title="Previous Track" { spawn "noctalia" "msg" "media" "previous"; }
+    XF86AudioNext allow-when-locked=true hotkey-overlay-title="Next Track" { spawn "noctalia" "msg" "media" "next"; }
+
+    // #"Display"
+    XF86MonBrightnessUp   allow-when-locked=true hotkey-overlay-title="Brightness Up" { spawn "noctalia" "msg" "brightness-up"; }
+    XF86MonBrightnessDown allow-when-locked=true hotkey-overlay-title="Brightness Down" { spawn "noctalia" "msg" "brightness-down"; }
+
+    // #"Screenshots"
+    Print repeat=false hotkey-overlay-title="Screenshot a Region" { spawn "noctalia" "msg" "screenshot-region"; }
+    Mod+Shift+S repeat=false hotkey-overlay-title="Screenshot a Region" { spawn "noctalia" "msg" "screenshot-region"; }
+    Ctrl+Print repeat=false hotkey-overlay-title="Screenshot the Screen" { spawn "noctalia" "msg" "screenshot-fullscreen"; }
+    Alt+Print repeat=false hotkey-overlay-title="Screenshot a Window" { spawn "noctalia" "msg" "screenshot-window"; }
+}
