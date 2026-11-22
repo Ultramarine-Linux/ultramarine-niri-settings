@@ -1,0 +1,44 @@
+prefer-no-csd
+
+// struts trim gaps at top/bottom to 4px
+layout {
+    gaps 8
+    struts {
+        top -4
+        bottom -4
+    }
+    focus-ring {
+        off
+    }
+    border {
+        on
+        width 2
+    }
+}
+
+window-rule {
+    geometry-corner-radius 12
+    clip-to-geometry true
+}
+
+// noctalia's blurred wallpaper behind the overview
+layer-rule {
+    match namespace="^noctalia-backdrop"
+    place-within-backdrop true
+}
+
+// lets noctalia notifications focus windows
+debug {
+    honor-xdg-activation-with-invalid-serial
+}
+
+hotkey-overlay {
+    skip-at-startup
+}
+
+// noctalia handles screenshots
+screenshot-path null
+
+environment {
+    ELECTRON_OZONE_PLATFORM_HINT "auto"
+}

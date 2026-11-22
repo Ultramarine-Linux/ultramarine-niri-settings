@@ -1,0 +1,5 @@
+[com.github.stunkymonkey.nautilus-open-any-terminal]
+terminal='alacritty'
+
+[org.gnome.desktop.interface]
+gtk-theme='adw-gtk3-dark'

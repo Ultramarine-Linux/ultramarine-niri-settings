@@ -1,0 +1,182 @@
+[backdrop]
+enabled = true
+tint_intensity = 0.0
+
+[bar.default]
+capsule = true
+center = [ "taskbar" ]
+concave_edge_corners = false
+end = [ "tray", "notifications", "keybinds", "group:g1", "clock", "control-center" ]
+font_family = "Noto Sans"
+font_scale = 1.05
+margin_edge = 4
+margin_ends = 8
+position = "bottom"
+shadow = false
+start = [ "launcher", "workspaces" ]
+thickness = 42
+widget_spacing = 5
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    border_width = 1.0
+    enabled = true
+    fill = "surface_container"
+    id = "g1"
+    members = [ "clipboard", "network", "bluetooth", "volume", "brightness", "battery" ]
+    opacity = 1.0
+    padding = 6.0
+    widget_spacing = 6
+
+[bluetooth]
+connection_notifications = true
+
+[calendar]
+
+[control_center]
+hidden_tabs = [ "audio", "screen-time" ]
+
+    [control_center.calendar]
+    show_events_card = false
+
+[dock]
+radius_top_left = 12
+radius_top_right = 12
+
+[hot_corners.bottom_left]
+action = "launcher"
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 600.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = false
+    timeout = 900.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = true
+    timeout = 660.0
+
+[location]
+custom_schedule = false
+
+[plugin_settings."kenn/keybind-cheatsheet"]
+cheatsheet_placement = "attached"
+cheatsheet_position = "auto"
+compositor = "niri"
+
+[plugins]
+enabled = [ "kenn/keybind-cheatsheet" ]
+
+[shell]
+button_borders = false
+card_borders = false
+font_family = "Noto Sans"
+input_borders = false
+niri_overview_close_on_launch_enabled = true
+niri_overview_type_to_launch_enabled = true
+polkit_agent = true
+popup_borders = false
+
+    [shell.greeter_sync]
+    auto_sync = true
+
+    [shell.launcher]
+    category_icons_only = true
+    default_view = "all"
+    search_position = "top"
+    show_navigation_labels = false
+
+        [shell.launcher.providers.emoji]
+        global = false
+
+        [shell.launcher.providers.panels]
+        global = true
+
+    [shell.panel]
+    border_width = 0.0
+    clipboard_placement = "attached"
+    clipboard_position = "bottom_right"
+    control_center_position = "bottom_right"
+    launcher_placement = "attached"
+    launcher_position = "bottom_left"
+    wallpaper_show_names = false
+
+    [shell.screenshot]
+    annotate = true
+    copy_on_close = true
+
+    [shell.window_switcher]
+    style = "compact"
+
+[theme]
+builtin = "Noctalia"
+community_palette = "ADW"
+custom_palette = "Ultramarine"
+source = "custom"
+wallpaper_scheme = "m3-content"
+
+    [theme.templates]
+    builtin_ids = [ "alacritty", "btop", "gtk3", "gtk4", "niri" ]
+    community_ids = [ "pywalfox", "fastfetch", "starship" ]
+
+[wallpaper]
+directory = "/usr/share/backgrounds/ultramarine-linux"
+edge_smoothness = 0.0
+transition = [ "wipe" ]
+
+    [wallpaper.automation]
+    recursive = true
+
+    [wallpaper.default]
+    path = "/usr/share/backgrounds/default-dark.png"
+
+    [[wallpaper.favorite]]
+    custom_palette = "Ultramarine"
+    palette_source = "custom"
+    path = "/usr/share/backgrounds/default-dark.png"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    path = "/usr/share/backgrounds/default.png"
+    theme_mode = "light"
+
+[weather]
+enabled = false
+
+[widget.clock]
+format = "{:%H:%M %m/%d/%y}"
+
+[widget.control-center]
+glyph = "crop-1-1"
+
+[widget.keybinds]
+type = "kenn/keybind-cheatsheet:keybinds"
+
+[widget.launcher]
+custom_image = "/usr/share/icons/hicolor/scalable/apps/ultramarine.svg"
+
+[widget.network]
+show_label = false
+
+[widget.notifications]
+hide_when_no_unread = true
+
+[widget.taskbar]
+icon_scale = 1.4
+item_spacing = 6
+show_all_outputs = true
+
+[widget.volume]
+show_label = false
+
+[widget.workspaces]
+show_labels = false

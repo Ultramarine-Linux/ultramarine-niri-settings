@@ -1,0 +1,4 @@
+include "/etc/niri/config.kdl"
+include optional=true "noctalia.kdl"
+
+// your settings go below
