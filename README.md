@@ -1,4 +1,4 @@
-# niri-settings
+# ultramarine-niri-settings
 
 Default configuration for Ultramarine Niri (niri + Noctalia), packaged as `ultramarine-niri-settings` in umpkgs.
 
