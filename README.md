@@ -9,5 +9,4 @@ Default configuration for Ultramarine Niri (niri + Noctalia), packaged as `ultra
 
 ## TODO
 
-- License this repo
 - make script that bookmarks xdg dirs better than `xdg-user-dirs-gtk-update`
