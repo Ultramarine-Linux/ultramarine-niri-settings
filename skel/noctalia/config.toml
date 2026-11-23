@@ -91,6 +91,7 @@ popup_borders = false
     auto_sync = true
 
     [shell.launcher]
+    app_grid = true
     category_icons_only = true
     default_view = "all"
     search_position = "top"
@@ -127,7 +128,7 @@ wallpaper_scheme = "m3-content"
 
     [theme.templates]
     builtin_ids = [ "alacritty", "btop", "gtk3", "gtk4", "niri" ]
-    community_ids = [ "pywalfox", "fastfetch", "starship" ]
+    community_ids = [ "pywalfox", "fastfetch", "starship", "thunderbird" ]
 
 [wallpaper]
 directory = "/usr/share/backgrounds/ultramarine-linux"
@@ -164,6 +165,7 @@ type = "kenn/keybind-cheatsheet:keybinds"
 
 [widget.launcher]
 custom_image = "/usr/share/icons/hicolor/scalable/apps/ultramarine.svg"
+scale = 1.2
 
 [widget.network]
 show_label = false

@@ -17,43 +17,50 @@ application/toml=org.gnome.TextEditor.desktop
 application/xml=org.gnome.TextEditor.desktop
 text/css=org.gnome.TextEditor.desktop
 
-# images
-image/png=dev.noctalia.Noctalia.Annotator.desktop
-image/jpeg=dev.noctalia.Noctalia.Annotator.desktop
-image/webp=dev.noctalia.Noctalia.Annotator.desktop
-image/jxl=dev.noctalia.Noctalia.Annotator.desktop
-image/bmp=dev.noctalia.Noctalia.Annotator.desktop
-image/svg+xml=dev.noctalia.Noctalia.Annotator.desktop
-image/vnd.microsoft.icon=dev.noctalia.Noctalia.Annotator.desktop
+# images: use firefox and noctalia annotator as backup
+image/png=org.gnome.Loupe.desktop;org.mozilla.firefox.desktop;dev.noctalia.Noctalia.Annotator.desktop;
+image/jpeg=org.gnome.Loupe.desktop;org.mozilla.firefox.desktop;dev.noctalia.Noctalia.Annotator.desktop;
+image/webp=org.gnome.Loupe.desktop;org.mozilla.firefox.desktop;dev.noctalia.Noctalia.Annotator.desktop;
+image/gif=org.gnome.Loupe.desktop;org.mozilla.firefox.desktop;dev.noctalia.Noctalia.Annotator.desktop;
+image/avif=org.gnome.Loupe.desktop;org.mozilla.firefox.desktop;
+image/bmp=org.gnome.Loupe.desktop;org.mozilla.firefox.desktop;dev.noctalia.Noctalia.Annotator.desktop;
+image/svg+xml=org.gnome.Loupe.desktop;org.mozilla.firefox.desktop;dev.noctalia.Noctalia.Annotator.desktop;
+image/vnd.microsoft.icon=org.gnome.Loupe.desktop;org.mozilla.firefox.desktop;dev.noctalia.Noctalia.Annotator.desktop;
+image/jxl=org.gnome.Loupe.desktop;dev.noctalia.Noctalia.Annotator.desktop;
+image/heif=org.gnome.Loupe.desktop;
+image/tiff=org.gnome.Loupe.desktop;
 
-# firefox
+# video, use firefox as backup
+video/mp4=org.gnome.Showtime.desktop;org.mozilla.firefox.desktop;
+video/x-m4v=org.gnome.Showtime.desktop;org.mozilla.firefox.desktop;
+video/webm=org.gnome.Showtime.desktop;org.mozilla.firefox.desktop;
+video/ogg=org.gnome.Showtime.desktop;org.mozilla.firefox.desktop;
+video/x-ogm+ogg=org.gnome.Showtime.desktop;org.mozilla.firefox.desktop;
+video/x-theora+ogg=org.gnome.Showtime.desktop;org.mozilla.firefox.desktop;
+video/x-matroska=org.gnome.Showtime.desktop;
+video/quicktime=org.gnome.Showtime.desktop;
+video/vnd.avi=org.gnome.Showtime.desktop;
+
+# mail and calendar
+x-scheme-handler/mailto=net.thunderbird.Thunderbird.desktop;
+message/rfc822=net.thunderbird.Thunderbird.desktop;
+text/calendar=net.thunderbird.Thunderbird.desktop;
+
+# firefox: browser, pdf, audio
 x-scheme-handler/http=org.mozilla.firefox.desktop
 x-scheme-handler/https=org.mozilla.firefox.desktop
 text/html=org.mozilla.firefox.desktop
 application/xhtml+xml=org.mozilla.firefox.desktop
 application/pdf=org.mozilla.firefox.desktop
-image/avif=org.mozilla.firefox.desktop
-image/gif=org.mozilla.firefox.desktop
 audio/aac=org.mozilla.firefox.desktop
 audio/mp4=org.mozilla.firefox.desktop
 audio/mpeg=org.mozilla.firefox.desktop
-audio/x-mp3=org.mozilla.firefox.desktop
 audio/ogg=org.mozilla.firefox.desktop
-audio/vorbis=org.mozilla.firefox.desktop
-audio/x-vorbis=org.mozilla.firefox.desktop
 audio/x-vorbis+ogg=org.mozilla.firefox.desktop
 audio/flac=org.mozilla.firefox.desktop
-audio/x-flac=org.mozilla.firefox.desktop
-audio/x-oggflac=org.mozilla.firefox.desktop
-audio/opus=org.mozilla.firefox.desktop
-audio/wav=org.mozilla.firefox.desktop
-audio/x-wav=org.mozilla.firefox.desktop
-video/mp4=org.mozilla.firefox.desktop
-video/x-m4v=org.mozilla.firefox.desktop
-video/webm=org.mozilla.firefox.desktop
-video/ogg=org.mozilla.firefox.desktop
-video/x-ogm+ogg=org.mozilla.firefox.desktop
-video/x-theora+ogg=org.mozilla.firefox.desktop
+audio/x-flac+ogg=org.mozilla.firefox.desktop
+audio/x-opus+ogg=org.mozilla.firefox.desktop
+audio/vnd.wave=org.mozilla.firefox.desktop
 
 # network locations
 x-scheme-handler/smb=org.gnome.Nautilus.desktop
