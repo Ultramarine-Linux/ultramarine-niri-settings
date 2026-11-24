@@ -10,3 +10,4 @@ Default configuration for Ultramarine Niri (niri + Noctalia), packaged as `ultra
 ## TODO
 
 - make script that bookmarks xdg dirs in nautilus sidebar better than `xdg-user-dirs-gtk-update` (currently doesnt bookmark all of them, and the ones it does are in a weird order)
+- switch to `meta` key only keybind to open the noctalia app launcher once its supported in niri
