@@ -2,6 +2,7 @@ PREFIX ?= /usr
 DATADIR ?= $(PREFIX)/share
 SYSCONFDIR ?= /etc
 UNITDIR ?= $(PREFIX)/lib/systemd/system
+SHAREDSTATEDIR ?= /var/lib
 
 install:
 	install -Dm644 niri/config.kdl                                  $(DESTDIR)$(SYSCONFDIR)/niri/config.kdl
@@ -15,3 +16,4 @@ install:
 	install -Dm644 60-ultramarine-niri.gschema.override             $(DESTDIR)$(DATADIR)/glib-2.0/schemas/60-ultramarine-niri.gschema.override
 	install -Dm644 greetd/ultramarine-niri.toml                     $(DESTDIR)$(SYSCONFDIR)/greetd/ultramarine-niri.toml
 	install -Dm644 greetd/greetd.service.d/ultramarine-niri.conf    $(DESTDIR)$(UNITDIR)/greetd.service.d/ultramarine-niri.conf
+	install -Dm644 var/lib/noctalia-greeter/greeter.toml		$(DESTDIR)$(SHAREDSTATEDIR)/noctalia-greeter/greeter.toml
