@@ -24,7 +24,7 @@ widget_spacing = 5
     enabled = true
     fill = "surface_container"
     id = "g1"
-    members = [ "clipboard", "network", "bluetooth", "volume", "brightness", "battery" ]
+    members = [ "clipboard", "brightness", "volume", "bluetooth", "network", "battery" ]
     opacity = 1.0
     padding = 6.0
     widget_spacing = 6
@@ -153,6 +153,9 @@ transition = [ "wipe" ]
 
 [weather]
 enabled = false
+
+[widget.brightness]
+show_label = false
 
 [widget.clock]
 format = "{:%H:%M %m/%d/%y}"
