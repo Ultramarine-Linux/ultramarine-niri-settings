@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Noctalia Settings
+Comment=Change how Noctalia looks and behaves
+Exec=noctalia msg settings-open
+Icon=noctalia
+Terminal=false
+Categories=Settings;DesktopSettings;
+Keywords=noctalia;settings;bar;panel;theme;wallpaper;
+StartupNotify=false
