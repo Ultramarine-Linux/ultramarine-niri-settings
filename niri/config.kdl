@@ -31,7 +31,7 @@ input {
     touchpad {
         // off
         tap
-        // dwt
+        dwt
         // dwtp
         // drag false
         // drag-lock
@@ -46,7 +46,7 @@ input {
         // off
         // natural-scroll
         // accel-speed 0.2
-        // accel-profile "flat"
+        accel-profile "flat"
         // scroll-method "no-scroll"
     }
 
@@ -612,6 +612,14 @@ binds {
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
+}
+
+cursor {
+    hide-when-typing
+}
+
+switch-events {
+    lid-close { spawn "systemctl" "suspend-then-hibernate" }
 }
 
 // ultramarine settings and noctalia binds
