@@ -43,7 +43,8 @@ binds {
 
     // #"Screenshots"
     Print       repeat=false hotkey-overlay-title="Screenshot a Region" { spawn "noctalia" "msg" "screenshot-region"; }
-    Mod+Shift+S repeat=false hotkey-overlay-title="Screenshot a Region" { spawn "noctalia" "msg" "screenshot-region"; }
+    Mod+S       repeat=false hotkey-overlay-title="Screenshot a Region" { spawn "noctalia" "msg" "screenshot-region"; }
+    Mod+Shift+S repeat=false hotkey-overlay-title="Screenshot the Screen" { spawn "noctalia" "msg" "screenshot-fullscreen"; }
     Mod+Print   repeat=false hotkey-overlay-title="Screenshot the Screen" { spawn "noctalia" "msg" "screenshot-fullscreen"; }
     Shift+Print repeat=false hotkey-overlay-title="Screenshot a Window" { spawn "noctalia" "msg" "screenshot-window"; }
     Alt+Backslash       repeat=false hotkey-overlay-title="Screenshot a Region" { spawn "noctalia" "msg" "screenshot-region"; }
