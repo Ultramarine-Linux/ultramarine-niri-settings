@@ -24,7 +24,7 @@ binds {
 
     Mod+Ctrl+Equal       allow-when-locked=true hotkey-overlay-title="Volume Up" { spawn "noctalia" "msg" "volume-up"; }
     Mod+Ctrl+Minus       allow-when-locked=true hotkey-overlay-title="Volume Down" { spawn "noctalia" "msg" "volume-down"; }
-    Mod+Shift+Minus      repeat=false allow-when-locked=true hotkey-overlay-title="Mute Audio" { spawn "noctalia" "msg" "volume-mute"; }
+    Mod+Alt+Minus      repeat=false allow-when-locked=true hotkey-overlay-title="Mute Audio" { spawn "noctalia" "msg" "volume-mute"; }
     Mod+Ctrl+Shift+Minus repeat=false allow-when-locked=true hotkey-overlay-title="Mute Microphone" { spawn "noctalia" "msg" "mic-mute"; }
 
     // #"Media"
